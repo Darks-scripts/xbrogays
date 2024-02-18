@@ -42,18 +42,17 @@ mainTab:AddButton({
 })
 
 
-local autobuyTab = Window:MakeTab({
-	Name = "autobuyequips",
+local darkTab = Window:MakeTab({
+	Name = "Tab 1",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-local Section = autobuyTab:AddSection({
-	Name = "autobuyequips"
+local Section = darkTab:AddSection({
+	Name = "Section"
 })
 
-
-autobuyTab:AddToggle({
-	Name = "autobuy1",
+darkTab:AddToggle({
+	Name = "This is a toggle!",
 	Default = true,
 	Callback = function(Value)
 		autoBreakEquipSlotsMachine = Value
@@ -67,9 +66,8 @@ game:GetService("ReplicatedStorage").Network.EquipSlotsMachine_RequestPurchase:I
 	end    
 })
 
-
-autobuyTab:AddToggle({
-	Name = "autobuy2",
+darkTab:AddToggle({
+	Name = "This is a toggle!",
 	Default = true,
 	Callback = function(Value)
 		autoBreakEquipSlotsMachine = Value
@@ -83,9 +81,8 @@ game:GetService("ReplicatedStorage").Network.EquipSlotsMachine_RequestPurchase:I
 	end    
 })
 
-
-autobuyTab:AddToggle({
-	Name = "autobuy3",
+darkTab:AddToggle({
+	Name = "This is a toggle!",
 	Default = true,
 	Callback = function(Value)
 		autoBreakEquipSlotsMachine = Value
@@ -99,9 +96,8 @@ game:GetService("ReplicatedStorage").Network.EquipSlotsMachine_RequestPurchase:I
 	end    
 })
 
-
-autobuyTab:AddToggle({
-	Name = "autobuy4",
+darkTab:AddToggle({
+	Name = "This is a toggle!",
 	Default = true,
 	Callback = function(Value)
 		autoBreakEquipSlotsMachine = Value
@@ -115,9 +111,8 @@ game:GetService("ReplicatedStorage").Network.EquipSlotsMachine_RequestPurchase:I
 	end    
 })
 
-
-autobuyTab:AddToggle({
-	Name = "autobuy5",
+darkTab:AddToggle({
+	Name = "This is a toggle!",
 	Default = true,
 	Callback = function(Value)
 		autoBreakEquipSlotsMachine = Value
@@ -131,9 +126,8 @@ game:GetService("ReplicatedStorage").Network.EquipSlotsMachine_RequestPurchase:I
 	end    
 })
 
-
-autobuyTab:AddToggle({
-	Name = "autobuy6",
+darkTab:AddToggle({
+	Name = "This is a toggle!",
 	Default = true,
 	Callback = function(Value)
 		autoBreakEquipSlotsMachine = Value
@@ -147,20 +141,17 @@ game:GetService("ReplicatedStorage").Network.EquipSlotsMachine_RequestPurchase:I
 	end    
 })
 
-
-autobuyTab:AddToggle({
-	Name = "autobuy7",
+darkTab:AddToggle({
+	Name = "This is a toggle!",
 	Default = true,
 	Callback = function(Value)
 		autoBreakEquipSlotsMachine = Value
     while autoBreakEquipSlotsMachine and task.wait() do
     local args = {
-    [1] = 7
+    [1] = 1
 }
 
 game:GetService("ReplicatedStorage").Network.EquipSlotsMachine_RequestPurchase:InvokeServer(unpack(args))
             end
 	end    
 })
-
-OrionLib:Init()
